@@ -1,0 +1,202 @@
+ <div>
+<img className="oval" src={ova}/>
+ <div class="row x">
+ <div class="col-sm u">
+ <form>
+ <div class="form-group">
+ <h2>Login</h2><br/>
+    <img className="em" src={email} />
+   <input type="email" class="form-control fo" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"onChange={(e) => setemai(e.target.value)}/><br/>
+   
+ </div>
+ <div class="form-group">
+ <img className="e" src={pass}/>
+   <input type="password" class="form-control fo" id="exampleInputPassword1" placeholder="Password" onChange={(e) => setpas(e.target.value)}/>
+ </div>
+
+ <div class="form-check">
+
+   <input type="checkbox" class="form-check-input check" id="exampleCheck1"/>
+
+   <label class="form-check-label" class="exampleCheck1 remember">Remember me</label>
+ 
+   <NavLink to="/Forgot"> 
+   <a href="#" className="f">Forgetpassward</a> </NavLink>
+ </div>
+   
+
+ <button type="submit" class="qu" onClick={login}>login</button>
+
+  <p className="paragra"> Don't have an account? <NavLink to="/signup" className="song"> Sign up </NavLink></p>
+      
+
+</form>
+ </div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.back{
+   background-color: rgb(235, 5, 5);
+}
+.x{
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%,-50%);
+ 
+}
+.i{
+    margin-left: -100px;
+    width: 150px;
+    height: 150px;
+}
+.oval{
+    width: 150px;
+    height: 150px;
+   margin-left: -80px;
+}
+
+
+/* .u{
+    margin-top: 15%;
+    margin-right: 30%;
+} */
+
+.fo{
+    width: 310px;
+    padding-left: 30px;
+}
+.m{
+    margin-right: -100px;
+    width: 150px;
+    height: 150px;
+}
+
+.ema{
+    width:36%;
+    height: 36px;
+    max-width: 50%;
+    background-color: rgb(238, 238, 238);
+    outline: none;
+    border-radius: 8px;
+    padding-left: 30px;
+    font-size: 20px;
+    border-color: white;
+
+    
+
+}
+.f{
+   text-decoration: none;
+    color: gray;
+    margin-left: 70px;
+    
+}
+.remember{
+    margin-top: 20px;
+    color: gray;
+}
+.check{
+    margin-top: 24px;
+    
+}
+a{
+    text-decoration: none;
+}
+.qu{
+    margin-left: 190px;
+    margin-top: 19px;
+    text-decoration: none;
+    background-color: blueviolet;
+    width: 40%;
+    height: 50px;
+    color: white;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+}
+.song{
+    color: gray;
+}
+
+
+.em{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-left: 5px;
+    margin-top: 9px;
+   
+}
+.e{
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    margin-left: 5px;
+    margin-top: 9px;
+  
+}
+.for{
+    margin-left: 6%;
+    text-decoration: none;
+    color: blueviolet;
+}
+.bt{
+    margin-left: 21%;
+    text-decoration: none;
+    background-color: blueviolet;
+    width: 20%;
+    height: 35px;
+    color: white;
+    border-radius: 6px;
+    outline: none;
+}
+.paragra{
+    margin-left: 30px;
+    margin-top: 20px;
+    color: gray;
+}
+
+
